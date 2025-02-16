@@ -13,6 +13,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 '''__init__.py'''
 from .layerInfo import LayerInfo
-from .modelSummary import Statistics
+from .torchModelSummary import Statistics
 
 __all__ = ['LayerInfo, Statistics']
