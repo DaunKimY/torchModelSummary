@@ -3,7 +3,7 @@ A custom-renovated version of torchsummary module
 
 ## Introduction
 ### Limitation of GPU's DRAM for a huge model
-![Fig 1. VGG 16’s GPU memory usage for five batches on Tesla 4](./modelSummary/Fig1.png)
+![Fig 1. VGG 16’s GPU memory usage for five batches on Tesla 4](./torchModelSummary/Fig1.png)
 
 ###### Fig 1. VGG 16’s GPU memory usage for five batches on Tesla 4
 ###### (You could see codes of Fig 1 in appendix A. [Reference web site](https://pytorch.org/blog/understanding-gpu-memory-1/))
@@ -15,7 +15,7 @@ When it comes to use train dataset, the memory could be saved by dividing a sing
 In the same way, if we are trying to train a single huge model, Model parallelism method or model pipelining is coming up with regard to commercial GPGPU and insufficient cores, unlike having a A100 or H100. From this context, a code (or module) for separating a model into several sets of layers is needed.
 
 ## Insufficient functions of torchsummary module
-![Fig 2. Torchsummary module’s summary of ResNet50](./modelSummary/Fig2.png)
+![Fig 2. Torchsummary module’s summary of ResNet50](./torchModelSummary/Fig2.png)
 
 ###### Fig 2. Torchsummary module’s summary of ResNet50
 ###### (You could see codes of Fig 2 in appendix B.)
