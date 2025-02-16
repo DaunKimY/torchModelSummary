@@ -3,7 +3,7 @@ A custom-renovated version of torchsummary module
 
 ## Abstract
 - A pytorch model splitter, layer by layer for implementing model parallelism/pipelining
-- A summarizer of a pytorch model
+- A summarizer of pytorch model's statistics
 
 ## Introduction
 ### Limitation of GPU's DRAM for a huge model
