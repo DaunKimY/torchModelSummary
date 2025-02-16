@@ -4,8 +4,9 @@ A custom-renovated version of torchsummary module
 ## Introduction
 ### Limitation of GPU's DRAM for a huge model
 ![Fig 1. VGG 16’s GPU memory usage for five batches on Tesla 4](./modelSummary/Fig1.png)
-Fig 1. VGG 16’s GPU memory usage for five batches on Tesla 4
-(You could see codes of Fig 1 in appendix A. [Reference web site](https://pytorch.org/blog/understanding-gpu-memory-1/))
+
+###### Fig 1. VGG 16’s GPU memory usage for five batches on Tesla 4
+###### (You could see codes of Fig 1 in appendix A. [Reference web site](https://pytorch.org/blog/understanding-gpu-memory-1/))
 
 There are four major GPU memory usage causes when training a model - model parameters, optimizer, activation, and gradient. Model parameters and optimizer are mainly derived from layers of the model, and activation and gradient are derived from given train dataset.
 
@@ -15,8 +16,9 @@ In the same way, if we are trying to train a single huge model, Model parallelis
 
 ## Insufficient functions of torchsummary module
 ![Fig 2. Torchsummary module’s summary of ResNet50](./modelSummary/Fig2.png)
-Fig 2. Torchsummary module’s summary of ResNet50
-(You could see codes of Fig 2 in appendix B.)
+
+###### Fig 2. Torchsummary module’s summary of ResNet50
+###### (You could see codes of Fig 2 in appendix B.)
 
 There is a module named torchsummary, which gives information of a given model, layer by layer. But the only thing you could do by the module is printing the summary. For the purpose of model parallelism, a function to get layers as variables is necessary. Further more, the torchsummary only supports informing layer type, output shape and number of parameters. We need more, especially memory sizes for each steps.
 
