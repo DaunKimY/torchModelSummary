@@ -2,7 +2,7 @@
 A custom-renovated version of torchsummary module
 
 ## Abstract
-- A pytorch model splitter, layer by layer for implenting model parallelism/pipelining
+- A pytorch model splitter, layer by layer for implementing model parallelism/pipelining
 - A summarizer of a pytorch model
 
 ## Introduction
