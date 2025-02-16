@@ -1,6 +1,10 @@
 # Model-Summary-Module-for-Pytorch
 A custom-renovated version of torchsummary module
 
+## Abstract
+- A pytorch model splitter, layer by layer for implenting model parallelism/pipelining
+- A summarizer of a pytorch model
+
 ## Introduction
 ### Limitation of GPU's DRAM for a huge model
 ![Fig 1. VGG 16’s GPU memory usage for five batches on Tesla 4](./torchModelSummary/Fig1.png)
