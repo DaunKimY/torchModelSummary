@@ -35,7 +35,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 '''
 ```
 
-The source codes of modelSummary module is originally based on the torchsummary. As torchsummary follows the MIT license, modelSummary also follows the MIT license. You could see source codes in attached files.
+The source codes of torchModelSummary module is originally based on the torchsummary. As torchsummary follows the MIT license, torchModelSummary also follows the MIT license. You could see source codes in attached files.
 
 ## How to use
 - Import the module
@@ -45,17 +45,17 @@ import torch
 import torch.nn as nn
 import torchvision.models as models
 
-import modelSummary
+import torchModelSummary
 ```
 
 - Extract statistics of a pytorch machine learning model (ResNet152)
 
 ```python
 model = models.resnet152()
-statistics = modelSummary.Statistics(model=model, input_data=torch.rand(1, 3, 224, 224))
+statistics = torchModelSummary.Statistics(model=model, input_data=torch.rand(1, 3, 224, 224))
 ```
 
-- Explanation of the class “modelSummary.Statistics”
+- Explanation of the class “torchModelSummary.Statistics”
 
 ```python
  """
