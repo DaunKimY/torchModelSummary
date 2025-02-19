@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='torchModelSummary',
-    version='1.0.0',
+    version='1.0.2',
     description='A custom-renovated version of torchsummary module',
     long_description=open('README.md', 'r', encoding='UTF8').read(),
     long_description_content_type='text/markdown',
@@ -10,6 +10,7 @@ setup(
     author_email='daunkim430@yonsei.ac.kr',
     url='https://github.com/DaunKimY/torchModelSummary',
     packages=find_packages(),
+    keywords=['torchModelSummary', 'torch', 'pytorch', 'model', 'summary', 'statistics'],
     license='MIT',
     install_requires=[
         'torch'
