@@ -4,7 +4,7 @@ setup(
     name='torchModelSummary',
     version='1.0.0',
     description='A custom-renovated version of torchsummary module',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', 'r', encoding='UTF8').read(),
     long_description_content_type='text/markdown',
     author='Daun Kim',
     author_email='daunkim430@yonsei.ac.kr',
